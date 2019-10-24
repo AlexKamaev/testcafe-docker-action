@@ -7,4 +7,5 @@ inputs:
 runs:
   using: "docker"
   image: "docker://alexkamaev/testcafe"
-  args: "--shm-size=1g"
+  args:
+    - 'foo'
