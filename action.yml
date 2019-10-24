@@ -6,6 +6,6 @@ inputs:
     required: true
 runs:
   using: "docker"
-  image: "docker://alexkamaev/testcafe"
+  image: "--shm-size=1g docker://alexkamaev/testcafe"
   args:
     - ${{ inputs.cli }}
