@@ -8,4 +8,4 @@ runs:
   using: "docker"
   image: "docker://alexkamaev/testcafe"
   args:
-    - 'foo'
+    - ${{ inputs.args }}
