@@ -1,11 +1,11 @@
 name: "testcafe-docker-action"
 description: "Github actions that executes testcafe inside container that has all popular browsers pre-installed"
 inputs:
-  args:
+  cli:
     description: "Arguments that will be passed to testcafe CLI"
     required: true
 runs:
   using: "docker"
   image: "docker://alexkamaev/testcafe"
   args:
-    - ${{ inputs.args }}
+    - ${{ inputs.cli }}
